@@ -1,0 +1,12 @@
+{
+  "name": "gpx-to-geojson-convertor",
+  "version": "1.0.0",
+  "description": "A GPX to GeoJSON Convertor using Node",
+  "main": "convert.js",
+  "keywords": ["GPX", "GeoJSON", "NodeJS"],
+  "author": "Brian Childress, brian@brianchildress.co",
+  "license": "ISC",
+  "dependencies": {
+    "@mapbox/togeojson": "^0.16.0"
+  }
+}
