@@ -7,6 +7,6 @@
   "author": "Brian Childress, brian@brianchildress.co",
   "license": "ISC",
   "dependencies": {
-    "@mapbox/togeojson": "^0.16.0"
+    "@mapbox/togeojson": "^0.16.2"
   }
 }
