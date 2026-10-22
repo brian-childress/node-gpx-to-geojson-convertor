@@ -1,5 +1,5 @@
-const togeojson = require("@mapbox/togeojson");
-const DomParser = require("xmldom").DOMParser; // node doesn't have xml parsing or a dom.
+const togeojson = require("@tmcw/togeojson");
+const DomParser = require("@xmldom/xmldom").DOMParser; // node doesn't have xml parsing or a dom.
 const fs = require("fs");
 
 const config = {};
@@ -25,7 +25,8 @@ args.forEach(val => {
 
 if (config.in_file) {
   const fileParsedFromDom = new DomParser().parseFromString(
-    fs.readFileSync(config.in_file, "utf-8")
+    fs.readFileSync(config.in_file, "utf-8"),
+    "text/xml"
   );
   // Convert GPX to GeoJSON
   const converted = togeojson.gpx(fileParsedFromDom);
